@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { IndexComponent } from './index/index.component';
 import { MybookComponent } from './mybook/mybook.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     NavbarComponent,
     IndexComponent,
     MybookComponent,
-    GalleryComponent
+    GalleryComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
