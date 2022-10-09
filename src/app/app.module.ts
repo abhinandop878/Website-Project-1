@@ -8,6 +8,7 @@ import { IndexComponent } from './index/index.component';
 import { MybookComponent } from './mybook/mybook.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     IndexComponent,
     MybookComponent,
     GalleryComponent,
-    AboutusComponent
+    AboutusComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
