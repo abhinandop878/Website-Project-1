@@ -22,19 +22,19 @@
                     <h1 style="color: navy;text-align: center;">Register</h1>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">Name:</label>
-                        <input placeholder="Enter your name"type="text" class="form-control">
+                        <input placeholder="Enter your name"type="text" class="form-control" name="Name" [(ngModel)]="Name">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">Email ID:</label>
-                        <input placeholder="Enter your email"type="email" name="" id="" class="form-control">
+                        <input placeholder="Enter your email"type="email" name="EmailID" id="" class="form-control" [(ngModel)]="EmailID">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">Mobile NO:</label>
-                        <input placeholder="Enter your mobile no"type="tel" name="" id="" class="form-control">
+                        <input placeholder="Enter your mobile no"type="tel" name="MobileNo" id="" class="form-control" [(ngModel)]="MobileNo">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">Gender:</label>
-                        <select name="" id="" class="form-control">
+                        <select name="Gender" id="" class="form-control" [(ngModel)]="Gender">
                             <option value="Select">Select</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">Blood Group:</label>
-                        <select class="form-control"name="" id="">
+                        <select class="form-control"name="BloodGroup" id="" [(ngModel)]="BloodGroup">
                             <option value="Select">Select</option>
                             <option value="A-">A-</option>
                             <option value="B+">B+</option>
@@ -56,15 +56,15 @@
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">Pincode:</label>
-                        <input placeholder="Enter your pincode"type="text" class="form-control">
+                        <input placeholder="Enter your pincode"type="text" class="form-control"name="Pincode" [(ngModel)]="Pincode">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">Username:</label>
-                        <input placeholder="Enter your username"type="text" class="form-control">
+                        <input placeholder="Enter your username"type="text" class="form-control"name="Username" [(ngModel)]="Username">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">Password:</label>
-                        <input placeholder="Enter your Password"type="password" name="" id="" class="form-control">
+                        <input placeholder="Enter your Password"type="password" name="Password" id="" class="form-control" [(ngModel)]="Password">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">Confirm Password:</label>
@@ -72,7 +72,7 @@
                     </div>
                     <br>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <button class="btn btn-success">Register</button>
+                        <button class="btn btn-success" (click)="readRegister()">Register</button>
                     </div>
                 </div>
            </div>
